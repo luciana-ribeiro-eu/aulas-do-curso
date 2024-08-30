@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        th, td {
+            border: 1px solid purple;
+        }
+        tfoot {
+            background-color: rgb(103, 213, 247);
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas</h1>
+    <table>
+        <thead>
+            <tr> 
+                <th colspan="4"><b>LISTA DE EXEMPLO</b></th>
+            </tr>
+            <tr>
+                <th><i>PRODUTO</i></th>
+                <th>quantidade</th>
+                <th>preço</th>
+                <th>black friday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="1">produto 1</td>
+                <td>30</td>
+                <td>50,00</td>
+                <td rowspan="2">sim</td>
+            </tr> 
+            <!-- existe o colspam que expande a linha em uma coluna e o rowspan q expande a linha em uma linha -->
+            <tr>
+                <td>produto 2</td>
+                <td>20</td>
+                <td>70,00</td>
+            </tr>
+            <tr>
+                <td>produto 3</td>
+                <td>50</td>
+                <td>100,00</td>
+                <td>não</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"><b>TOTAL</b></td>
+                <td>220,00</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
